@@ -32,7 +32,7 @@ i2cdetect -y 1
 
 10) clone the repository
 ```     
-git clone https://github.com/Stevemwa/Rasp_MPU6050/blob/f48a587b3d54d0905d1b0331720aab1333233c22/MPU6050.py
+git clone https://github.com/Stevemwa/Rasp_MPU6050.git
 ```
 
 9) create your main file i.e ```main.py```
