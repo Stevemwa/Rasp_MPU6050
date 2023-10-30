@@ -1,5 +1,5 @@
 # Rasp_gsm
-Use of a  IMU module to get acceleration and gyroscopic dats.
+Use of a  IMU module to get acceleration and gyroscopic data.
 
 to use :
 
