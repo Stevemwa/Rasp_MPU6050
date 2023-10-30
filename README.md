@@ -3,26 +3,36 @@ Use of a  IMU module to get acceleration and gyroscopic dats.
 
 to use :
 
-1) on your terminal type ``` sudo raspi-config```
+1) on your terminal type
+   ```
+   sudo raspi-config
+   ```
    
-2) select 3: Interface Options
+3) select 3: ```Interface Options```
    
-3) select I5: I2C Enable and Enable I2c in not enabled
+4) select``` I5: I2C Enable``` and Enable I2c in not enabled
    
-4) get back to your terminal
+5) get back to your terminal
 
    
-5) on your terminal type ``` i2cdetect -y 1``` to check addresses of connected devices
+6) on your terminal type to check addresses of connected devices
+```
+i2cdetect -y 1
+```
 
     
-6) on your terminal type ``` pip install smbus2``` library that will use for I2C interface
+7) on your terminal type  to install smbu2 library that will use for I2C interface
+```
+ pip install smbus2
+```
 
-7) cd ``` /path/to/your/desired/directory```
+
+9) cd ``` /path/to/your/desired/directory```
 
 
-8) clone the repository
+10) clone the repository
 ```     
-git clone https://github.com/Stevemwa/Rasp_gsm/blob/906c9a2102cefd5390ee31cd6d628c2672a2e3c4/gsm.py
+git clone https://github.com/Stevemwa/Rasp_MPU6050/blob/f48a587b3d54d0905d1b0331720aab1333233c22/MPU6050.py
 ```
 
 9) create your main file i.e ```main.py```
