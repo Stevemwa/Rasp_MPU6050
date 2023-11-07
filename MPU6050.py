@@ -42,18 +42,18 @@ class IMU:
          x = self.read_i2c_word(self.ACCEL_XOUT0)
          y = self.read_i2c_word(self.ACCEL_YOUT0)
          z = self.read_i2c_word(self.ACCEL_ZOUT0)
-         x=float(x)/4096.0
-         y=float(y)/4096.0
-         z=float(z)/4096.0
+         x=round((float(x)/4096.0),4)
+         y=round((float(y)/4096.0),4)
+         z=round((float(z)/4096.0),4)
          return x,y,z
     
     def get_gyro(self):
         x = self.read_i2c_word(self.GYRO_XOUT0)
         y = self.read_i2c_word(self.GYRO_YOUT0)
         z = self.read_i2c_word(self.GYRO_ZOUT0)
-        x=float(x)/1000.0
-        y=float(y)/1000.0
-        z=float(z)/1000.0
+        x=round((float(x)/32.8),4)#32.8 due to 1000Degree range
+        y=round((float(y)/32.8),4)
+        z=round((float(z)/32.8),4)
         return x,y,z
     
     def get_all_data(self):
