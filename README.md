@@ -49,10 +49,13 @@ if __name__ == "__main__":
 mpu = IMU()
 
     while True:
-            accel_data, gyro_data = mpu.read_data()
-            print("Accelerometer Data (g):", accel_data)
-            print("Gyroscope Data (degrees/s):", gyro_data)
-            time.sleep(1)
+            acceleration=mpu.get_acceleration()
+            gyro=mpu.get_gyro()
+            all_data=mpu.get_all_data()
+            print(str(acceleration))
+            print(str(gyro))
+            print(str(all_data))
+            time.sleep(0.5)
    
     
 ```
